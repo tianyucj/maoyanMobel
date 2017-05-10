@@ -1,0 +1,34 @@
+/* pages/mineOrder/mineOrder.wxss */
+body{
+    color: rgb(140,140,140);
+    background-color: rgb(245,245,245);
+}
+.orderList{
+    font-size: 30rpx;    
+    padding: 0 20rpx;
+    margin-top:20rpx;
+    background-color: #fff;
+    border-bottom: 1rpx solid rgb(212,212,212);
+    border-top: 1rpx solid rgb(212,212,212);
+}
+.cinema{
+    padding: 40rpx 0;   
+}
+.orderMsg{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid rgb(212,212,212); 
+    border-top: 1rpx solid rgb(212,212,212); 
+}
+.orderMsg image{
+    width: 134rpx;
+    height: 187rpx;
+    margin-right: 20rpx;
+}
+.orderTxt{
+    line-height: 50rpx;
+}
+.time,.seats{
+    font-size: 25rpx;
+}

@@ -1,0 +1,46 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* pages/regist/phoneNum.wxss */
+.body{
+    height: 1400rpx;
+    background-color:rgb(245,245,245);
+    font-size: 30rpx;
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+    padding:65rpx 0;
+    color: gray;
+}
+.nowStape{
+    color: rgb(215,65,64);
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100rpx;
+    background-color: #fff;
+}
+.input input{
+    width: 600rpx;
+}
+.button{
+    margin: 90rpx 0 20rpx;
+}
+.button button{
+    width: 600rpx;
+    height: 100rpx;
+    background-color: rgb(238,214,170);
+    color: #fff;
+}
+.treaty{
+    text-align: center;
+}

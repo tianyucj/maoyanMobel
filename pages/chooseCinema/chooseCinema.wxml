@@ -1,0 +1,26 @@
+<!--pages/cinema/cinema.wxml-->
+<view class="header"><image src="images/1_13.png"></image></view>
+<view class="cinemaList" wx:for="{{cinema}}">
+    <view class="cinemaName">
+        <text class="name" bindtap="chooseHall" id="{{index}}">{{item.chainName}}</text>
+        <view class="price">
+            <text>14.9</text>元起
+        </view>
+    </view>
+    <view class="address">
+        <text>{{item.address}}</text>
+        <text class="distance">2km</text>
+    </view>
+    <view class="label">
+        <text class="oneLabel">座</text>
+        <text class="oneLabel">团</text>
+        <text class="blueLabel">改签</text>
+        <text class="blueLabel">小吃</text>
+        <text class="kingLabel">折扣卡</text>
+    </view>
+    <view class="news">
+        <text class="favorable">惠</text>
+        <text class="newsTxt">侠探杰克:永不回头等2部影片特惠</text>
+    </view>
+</view>
+

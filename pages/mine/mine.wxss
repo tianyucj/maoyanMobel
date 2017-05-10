@@ -1,0 +1,19 @@
+/* pages/mine/mine.wxss */
+.mineList{
+    /*height: 900rpx;*/
+    background-color: rgb(245,245,245);
+    font-size: 30rpx;
+}
+.mineItem{
+    display: flex;
+    justify-content: space-between;
+    height: 60rpx;
+    padding: 32rpx;
+    margin: 30rpx 0;
+    background-color: #fff;
+    border-bottom: 1rpx solid rgb(212,212,212);
+}
+.right-arrow image{
+    width: 16rpx;
+    height: 32rpx;
+}

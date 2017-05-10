@@ -1,0 +1,109 @@
+/* pages/filmDtail/filmDtail.wxss */
+.header{
+    height: 478rpx;
+    padding: 30rpx;
+    font-size: 30rpx;
+    /*background: url(images/bg_02.png) no-repeat;*/
+    /*background-size: 100%;*/
+    color: rgb(189,187,184);
+}
+.filmTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filmDetail{
+    margin-left:30rpx;
+    line-height: 45rpx;
+}
+.filmCover{
+    width: 230rpx;
+    height: 312rpx;
+}
+.chName,.enName{
+    /*color: #fff;*/
+}
+.chName{
+    font-size: 40rpx;
+}
+/*得分*/
+.start image{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 5rpx;
+}
+.halfstart{
+    display: inline-block;
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 5rpx;
+    background: url(images/1_08.png) no-repeat;
+    background-size: 30rpx 30rpx;
+}
+.filmLabel{
+    padding: 7rpx;
+    border-radius: 10rpx;
+    background-color:rgb(127,122,118);
+    color: #fff;
+
+}
+.filmBtn{
+    display: flex;
+    justify-content: space-around;
+    margin-top:60rpx;
+}
+/*想看按钮*/
+.likeWatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 332rpx;
+    height: 70rpx;
+    border-radius: 10rpx;
+    background-color: rgb(96,88,80);
+    color: #fff;
+}
+.likeWatch image{
+    width: 31rpx;
+    height: 26rpx;
+    margin-right: 18rpx;
+}
+/*电影剧情介绍*/
+.filmIntroduce{
+    position: relative;
+    padding: 40rpx;
+    font-size: 30rpx;
+}
+.arrow{
+    position: absolute;
+    width: 35rpx;
+    height: 16rpx;
+    bottom:15rpx;
+    left:350rpx;
+}
+.filmIntroduce text{
+    line-height: 50rpx;
+}
+/*剧情简介收起和打开*/
+.introduceTxt{
+    display: inline-block;
+    width: 680rpx;
+    height: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*填充立即购票按钮固定定位的空位，将高度撑起来*/
+.cover{
+    height: 106rpx;
+}
+/*立即购票按钮*/
+.buyTicksBtn{
+    position: fixed;
+    width: 750rpx;
+    height: 106rpx;
+    bottom:0;
+    line-height: 106rpx;
+    text-align: center;
+    background-color: rgb(241,77,65);
+    color: #fff;
+}

@@ -1,0 +1,207 @@
+/* pages/selectionHall/selectionHall.wxss */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:30rpx;
+    padding: 30rpx;
+    border-bottom: 1rpx solid rgb(228,228,228);
+}
+.cinemaDtail{
+    display: flex;
+    width: 560rpx;
+    padding-right: 30rpx;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1rpx solid rgb(228,228,228);
+}
+.cinemaScore{
+    color: rgb(255,179,0);
+}
+.address{
+    margin: 20rpx 0 10rpx;
+    font-size: 25rpx;
+    color: rgb(152,152,152);
+}
+.cards text{
+    display: inline-block;
+    padding: 8rpx;
+    margin-right: 12rpx;
+    font-size: 20rpx;
+    border: 2rpx solid rgb(87,158,173);
+    border-radius: 5rpx;
+    color:rgb(87,158,173);
+}
+.right_arrow{
+    width: 16rpx;
+    height: 32rpx;
+}
+/*地图*/
+.mapIcon{
+    width: 40rpx;
+    height: 46rpx;
+    margin:0 0 10rpx 10rpx;
+}
+.mapTxt{
+    margin:10rpx 0 0;
+    color: rgb(148,148,148);
+}
+.favourable{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18rpx 0;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid rgb(228,228,228);
+    color: rgb(104,104,104);
+}
+/*折扣卡*/
+.discoute image{
+    width: 37rpx;
+    height: 28rpx;
+    margin-right: 24rpx;
+}
+/*中间的竖线*/
+.line{
+    width: 1rpx;
+    height: 50rpx;
+    background-color:rgb(228,228,228);
+}
+/*观影套餐*/
+.meal image{
+    width: 27rpx;
+    height: 33rpx;
+    margin-right: 24rpx;
+}
+/*影片展示区*/
+.filmShow{
+    position: relative;
+    height:317rpx;
+    background:url(images/bg_02.png) no-repeat;
+    background-size:100%;
+}
+.imgs{
+    padding: 30rpx 0 30rpx 240rpx;
+}
+.imgs image{
+    margin: 0 21rpx;
+}
+.filmPic1{
+    width: 188rpx;
+    height: 262rpx;
+}
+.filmPic2{
+    width: 156rpx;
+    height: 222rpx;
+}
+/*三角形*/
+.triangle{
+    position: absolute;
+    top:284rpx;
+    left:310rpx;
+    border-top:16rpx solid transparent;
+    border-right:30rpx solid transparent;
+    border-bottom:16rpx solid #fff;
+    border-left:30rpx solid transparent;
+}
+/*图片对应的影片信息*/
+.film{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+    padding: 20rpx 32rpx;
+    border-bottom: 1rpx solid rgb(228,228,228);
+}
+/*时长*/
+.showTime{
+    padding-top: 20rpx;
+    font-size: 25rpx;
+    color: rgb(141,141,141);
+}
+
+/*优惠信息*/
+.advert{
+    padding: 30rpx 0 0;
+    font-size: 30rpx;
+    background-color:rgb(245,245,245);
+    border-bottom: 1rpx solid rgb(228,228,228);
+    color: rgb(254,139,0);
+}
+.advertTxt{
+    display: flex;
+    justify-content: space-between;
+    height: 82rpx;
+    padding: 0 28rpx;
+    line-height: 82rpx;
+    background-color:rgb(255,243,201);
+}
+.chipMsg{
+    font-size: 30rpx;
+}
+.chipTitle{
+    height: 96rpx;
+    /*padding-left:38rpx;*/
+    line-height: 96rpx;
+    border-bottom: 1rpx solid rgb(228,228,228);
+    color: rgb(240,75,63);
+    font-weight: bolder;
+}
+.chipTitle text{
+    display: inline-block;
+    width: 230rpx;
+    padding-left:38rpx;
+    border-bottom: 3rpx solid rgb(212,68,67);
+}
+.chipList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35rpx;
+    height: 145rpx;
+    line-height: 40rpx;
+    border-bottom: 1rpx solid rgb(228,228,228);
+}
+.chipL,.chipR{
+    width: 370rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.filmTime{
+    text-align: center;
+}
+.filmChip{
+    text-align: left;
+}
+.filmPrice{
+    text-align: right;
+}
+.starTime{
+    font-size: 40rpx;
+}
+.unit{
+    font-size: 25rpx;
+}
+.endTime,.chipName{
+    font-size: 30rpx;
+    color: rgb(148,148,148);
+}
+.prePrice{
+    font-size: 30rpx;
+    color: rgb(255,179,0);
+}
+.price{
+    font-size: 40rpx;
+    color: rgb(249,77,57);
+}
+/*选座购票按钮*/
+.chooseSite{
+    display: inline-block;
+    padding: 16rpx;
+    font-size: 30rpx;
+    color: rgb(249,77,57);
+    border: 1rpx solid rgb(249,77,57);
+    background-color: transparent;
+    border-radius: 10rpx;
+}
+

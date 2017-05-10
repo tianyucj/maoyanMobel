@@ -1,0 +1,20 @@
+<!--pages/mineOrder/mineOrder.wxml-->
+<view class="body">
+    <view class="orderItem"  >
+        <view class="orderList" wx:for="{{userOrder}}">
+            <view class="cinema">{{item.chineName}}</view>
+            <view class="orderMsg">
+                <image src="http://localhost:3000/{{item.images}}"></image>
+                <view class="orderTxt">
+                    <view>{{item.filmName}}</view>
+                    <view class="time">{{item.showTime}}</view>
+                    <view class="seats" >
+                        <text>{{item.hallName}}:</text>
+                        <text wx:for="{{item.seat}}" wx:for-item="seat">{{seat}}、</text>
+                    </view>
+                </view>
+            </view>
+            <view class="cinema">总价：{{item.ticketPrice}}</view>
+        </view>
+    </view>
+</view>

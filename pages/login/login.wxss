@@ -1,0 +1,91 @@
+/* pages/login/login.wxss */
+.body{
+    height: 1278rpx;
+    background-color: rgb(245,245,245);
+}
+.userPhone{
+    height: 220rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userPhone image{
+    width: 136rpx;
+    height: 136rpx;
+}
+.title{
+    height: 82rpx;
+    line-height: 82rpx;
+    margin-left: 32rpx;
+    color: rgb(152,152,152);
+}
+.msg{
+    color: rgb(241,77,65);
+}
+.logForm{
+    height: 210rpx;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(201,201,201);
+    border-top: 1px solid rgb(201,201,201);
+}
+.logForm input{
+    width: 520rpx;
+    color: rgb(201,201,201);
+    font-size: 30rpx;
+}
+.username{
+    border-bottom: 1px solid rgb(201,201,201);
+}
+.username,.password{
+    height: 60rpx;
+    margin: 0 30rpx;
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.subLog{
+    width: 690rpx;
+    height: 95rpx;
+    color: #fff;
+    margin: 42rpx 0 34rpx;
+    background-color:rgb(241,77,65);
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx;
+    font-size: 30rpx;
+    color: rgb(241,77,65);
+}
+.otherTitle{
+    margin: 74rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashed{
+    width: 200rpx;
+    border-bottom: 1rpx dashed Rgb(194,194,194);
+}
+.otherTitle text{
+    color: rgb(140,140,140);
+}
+.linkLogo{
+    margin: 0 60rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 84rpx;
+    font-size: 25rpx;
+    text-align: center;
+}
+.logo image{
+    width: 84rpx;
+    height: 85rpx;
+}

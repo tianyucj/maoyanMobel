@@ -1,0 +1,4 @@
+<!--pages/identifyCode/identifyCode.wxml-->
+<import src="../template/template" />
+<template is="regTemplate" data="{{...item}}" />
+

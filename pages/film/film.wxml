@@ -1,0 +1,27 @@
+<!--pages/film/film.wxml-->
+<view class="header"><image src="images/film_02.png"></image></view>
+<view class="filmList"  >
+    <view class="filmItem" wx:for="{{hotFilmData}}">
+        <view wx:for="{{item.homeImg}}">
+            <image src="http://localhost:3000/{{item}}" class="filmPhoto"></image>
+        </view>
+        <view class="itemDtail">
+            <view class="dtailTxt">
+                <view class="filmTitle" id="{{index}}" bindtap="filmDtails">
+                    <text>{{item.chName}}</text>
+                    <text class="icon_3d">3D</text>
+                </view>
+                <view class="score">观众<text class="num">{{item.rink}}</text></view>
+                <view class="introduce">杀手森归来，身世迷揭开</view>
+                <view class="introduce">今天112家影院放映1335场</view>
+            </view>
+           <view bindtap="bindBuyTicketsTap"  id="{{index}}"> <button size="mini" class="buyTicketsBtn" >购票</button></view>
+        </view>
+    </view>
+    <view class="filmItem">
+        <view><text class="informationIcon">资讯</text></view>
+        <view class="itemDtail">
+            <view class="introduce">杀手森归来，身世迷揭开</view>
+        </view>
+    </view>
+</view>

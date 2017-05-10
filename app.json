@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/regist/phoneNum",
+    "pages/film/film",
+    "pages/login/login",  
+    "pages/mineOrder/mineOrder",
+    "pages/filmDtail/filmDtail",
+    "pages/chooseSeat/chooseSeat",
+    "pages/selectionHall/selectionHall",
+    "pages/mine/mine",
+    "pages/chooseCinema/chooseCinema",
+    "pages/cinema/cinema",
+    
+    "pages/identifyCode/identifyCode",
+    "pages/setPassword/setPassword",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/film/film",
+      "text": "电影",
+      "iconPath": "pages/cinema/images/1_24.png",
+      "selectedIconPath": "pages/film/images/film_11.png"
+    },
+    {
+      "pagePath": "pages/cinema/cinema",
+      "text": "影院",
+      "iconPath": "pages/cinema/images/1_31.png",
+      "selectedIconPath": "pages/cinema/images/1_26.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "pages/cinema/images/1_30.png",
+      "selectedIconPath": "pages/mine/images/2_03.png"
+    }]
+  }
+}

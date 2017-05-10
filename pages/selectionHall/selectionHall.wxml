@@ -1,0 +1,135 @@
+
+<!--pages/selectionHall/selectionHall.wxml-->
+<view class="header">
+  <view class="cinemaDtail">
+    <view>
+      <view>
+        <text>{{theChain.chainName}}</text>
+        <text class="cinemaScore"> 8.0分</text>
+      </view>
+      <view class="address">{{theChain.address}}</view>
+      <view class="cards">
+        <text>改签</text>
+        <text>改签</text>
+        <text>改签</text>
+        <text>改签</text>
+        <text>改签</text>
+      </view>
+    </view>
+    <view>
+      <image class="right_arrow" src="images/1_31.png"></image>
+    </view>
+  </view>
+  <view class="map">
+    <view>
+      <image src="images/1_03.png" class="mapIcon"></image>
+    </view>
+    <view class="mapTxt">地图</view>
+  </view>
+</view>
+<view class="favourable">
+  <view class="discoute">
+    <image src="images/2_06.png"></image>
+    <text>折扣卡</text>
+  </view>
+  <view class="line"></view>
+  <view class="meal">
+    <image src="images/2_03.png"></image>
+    <text>观影套餐</text>
+  </view>
+</view>
+<view class="filmShow">
+  <view class="imgs">
+    <image class="filmPic1" src="images/2_11.png"></image>
+    <image class="filmPic2" src="images/2_13.png"></image>
+  </view>
+  <view class="triangle"></view>
+</view>
+<view class="film" wx:if="{{chipData.length > 0}}">
+  <view>
+    <view>
+      <text>{{onlineFilmData.chName}}</text>
+      <text class="cinemaScore">9.0分</text>
+    </view>
+    <text class="showTime">片长：{{onlineFilmData.duration}}分钟</text>
+  </view>
+  <image class="right_arrow" src="images/1_31.png"></image>
+</view>
+<view class="film" wx:if="{{chipAllData.length > 0}}">
+  <view>
+    <view>
+      <text>{{chipAllData[0].chName}}</text>
+      <text class="cinemaScore">9.0分</text>
+    </view>
+    <text class="showTime">片长：{{chipAllData[0].duration}}分钟</text>
+  </view>
+  <image class="right_arrow" src="images/1_31.png"></image>
+</view>
+<view class="advert">
+  <view class="advertTxt">
+    <text>购票享低价，首单更优惠</text>
+    <text>33元开卡 ></text>
+  </view>
+</view>
+<view class="chipMsg">
+  <view class="chipTitle">
+    <text>今天{{nowDate}}</text>
+  </view>
+  <view class="chipItem" wx:if="{{chipAllData}}" wx:for-index="i" wx:for="{{chipAllData}}">
+    <view>
+      <view>
+        <text>{{item.chName}}</text>
+        <text class="cinemaScore">9.0分</text>
+      </view>
+      <text class="showTime">片长：{{item.duration}}</text>
+    </view>
+    <view class="chipList" wx:for="{{item.chipData}}" wx:for-item="chip" wx:for-index="j">
+      <view class="chipL">
+        <view class="filmTime">
+          <text class="starTime">{{chip.showTime}}</text>
+          <view class="endTime">19:07散场</view>
+        </view>
+        <view class="filmChip">
+          <text>国语3D</text>
+          <view class="chipName">{{chip.voidHall}}</view>
+        </view>
+      </view>
+      <view class="chipR">
+        <view class="filmPrice">
+          <view class="price">{{chip.ticketPrice}}
+            <text class="unit">元</text>
+          </view>
+          <view class="prePrice">折扣卡:37元</view>
+        </view>
+        <view>
+          <text class="chooseSite" wx:key="{{index}}" bindtap="chooseSeat" id="{{i}}_{{j}}">选座购票</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="chipItem" wx:if="{{chipData}}" wx:for="{{chipData}}">
+    <view class="chipList">
+      <view class="chipL">
+        <view class="filmTime">
+          <text class="starTime">{{item.showTime}}</text>
+          <view class="endTime">19:07散场</view>
+        </view>
+        <view class="filmChip">
+          <text>国语3D</text>
+          <view class="chipName">{{item.voidHall}}</view>
+        </view>
+      </view>
+      <view class="chipR">
+        <view class="filmPrice">
+          <view class="price">{{item.ticketPrice}}
+            <text class="unit">元</text>
+          </view>
+          <view class="prePrice">折扣卡:37元</view>
+        </view>
+        <view>
+          <text class="chooseSite" wx:key="{{index}}" bindtap="chooseSeat" id="{{index}}">选座购票</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

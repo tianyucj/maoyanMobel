@@ -1,0 +1,7 @@
+{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(211,62,55)",
+    "navigationBarTitleText": "热映",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
+}

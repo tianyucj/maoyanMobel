@@ -1,0 +1,62 @@
+/* pages/film/film.wxss */
+.header image{
+    height:156rpx;
+    width:750rpx;
+}
+.filmItem{
+    display: flex;
+    justify-content: space-around;
+    padding: 25rpx 22rpx 0;
+}
+.filmPhoto{
+    width: 134rpx;
+    height: 187rpx;
+}
+.itemDtail{
+    width: 530rpx;
+    padding-bottom: 35rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid rgb(212,212,212);
+}
+.dtailTxt{
+    line-height: 50rpx;
+}
+.icon_3d{
+    display: inline-block;
+    padding: 0 7rpx ;
+    margin-left:11rpx;
+    background-color: rgb(138,183,204);
+    color: #fff;
+    font-size:25rpx;
+    border-radius: 5rpx;
+    vertical-align: middle;
+}
+/*观众评分*/
+.score{
+    font-size: 30rpx;
+    color: rgb(128,128,128);
+}
+.num{
+    font-size:35rpx;
+    color: rgb(254,175,0);
+}
+.introduce{
+    font-size:30rpx;
+    color: rgb(103,103,103);
+}
+/*购票按钮,如果在设置的button的plain="true" 即按钮镂空背景色透明，再来设置border和color无效*/
+.buyTicketsBtn{
+    background-color: transparent;
+    border: 1px solid rgb(224,65,43);
+    color: rgb(224,65,43);
+}
+/*资讯*/
+.informationIcon{
+    padding: 10rpx;
+    font-size: 30rpx;
+    color: rgb(254,175,0);
+    border: 1rpx solid rgb(254,175,0);
+    border-radius: 5rpx;
+}

@@ -1,0 +1,38 @@
+<!--pages/filmDtail/filmDtail.wxml-->
+<view class="header">
+    <view class="filmTitle">
+        <image class="filmCover" src="http://localhost:3000/{{tabFilmData.homeImg}}"></image>
+        <view class="filmDetail">
+            <text class="chName">{{tabFilmData.chName}}</text>
+            <view class="enName"><text>{{tabFilmData.enName}}</text></view>
+            <view class="score" wx:if="{{tabFilmData.rink}}">
+                <label class="start" wx:for="{{tabFilmData.rink*10/2}}"><image src="images/1_06.png"></image></label>
+                <label class="halfstart"></label>
+                <text class="scoreNum">{{tabFilmData.rink}}</text>
+            </view>
+            <view>(7092评分)</view>
+            <view class="label">
+                <text>{{tabFilmData.style}}</text>
+                <text class="filmLabel">3D</text>
+            </view>
+            <view class="country">
+                <text>{{tabFilmData.place}}</text>
+                <text>/{{tabFilmData.duration}}</text>
+            </view>
+            <view class="showPlace">
+                <text>{{tabFilmData.rePlace}} ></text>
+            </view>
+        </view>
+    </view>
+    <view class="filmBtn">
+        <view class="likeWatch"><image src="images/1_14.png"></image><text>想看</text></view><view class="likeWatch"><image src="images/1_17.png"></image><text>评分</text></view>
+    </view>
+</view>
+
+<view class="filmIntroduce">
+    <text class="{{viewClass}}">{{tabFilmData.abstract}}</text>
+    <image bindtap="bindArrow" class="arrow" src="images/arrow.png"></image>
+</view>
+
+<view class="cover"></view>
+<view class="buyTicksBtn" bindtap="buyTicks" id="{{tabFilmData._id}}">立即购票</view>

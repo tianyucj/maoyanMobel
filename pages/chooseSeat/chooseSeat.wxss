@@ -1,0 +1,149 @@
+/* pages/chooseSeat/chooseSeat.wxss */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx 0;
+    margin: 0 30rpx;
+    border-bottom: 1rpx solid rgb(236,236,236);
+}
+.showTime{
+    font-size: 30rpx;
+    color: rgb(94,94,94);
+}
+.filmStyle{
+    color: rgb(225,61,52);
+}
+.startTime{
+    margin: 0 20rpx;
+}
+.filmDtail{
+    line-height: 50rpx;
+}
+.turnPlay{
+    width: 120rpx;
+    padding: 15rpx 22rpx;
+    border: 1rpx solid rgb(236,236,236);
+    border-radius: 60rpx;
+}
+/*座位状态展示*/
+.seatStyle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 74rpx;
+    border-bottom: 1rpx solid rgb(236,236,236);
+}
+.style{
+    font-size: 30rpx;
+}
+.style image{
+    width: 33rpx;
+    height: 30rpx;
+    margin-right: 16rpx;
+    vertical-align: middle;
+}
+.cpSeat image{
+    width: 62rpx;
+    height: 30rpx;
+}
+.seats{
+    padding: 0 32rpx 24rpx 20rpx;
+    background-color: rgb(240,240,240);
+}
+/*荧幕*/
+.screen{
+    width: 440rpx;
+    height: 46rpx;
+    margin-left: 150rpx;
+    line-height: 46rpx;
+    text-align: center;
+    font-size: 35rpx;
+    color: rgb(103,103,103);
+    background-color: rgb(220,220,220);
+    border-bottom-left-radius: 50rpx;
+    border-bottom-right-radius: 50rpx;
+}
+.seats_1{
+    display: flex;
+    justify-content: flex-start;
+}
+.seatsShow{
+    display: flex;
+}
+/*座位的排号*/
+.seatsRowNum{
+    width: 30rpx;
+    padding: 3rpx 10rpx;
+    margin-top:25rpx;
+    margin-right: 30rpx;
+    font-size: 30rpx;
+    background-color: rgb(168,168,168);
+    border-radius: 30rpx;
+    color: #fff;
+}
+/*无座位*/
+.nullSeatNum{
+    width: 30rpx;
+    height: 30rpx;
+    padding: 3rpx 10rpx;
+    margin-top:25rpx;
+    margin-right: 30rpx;
+}
+.seatsRank{
+    /*width: 727rpx;*/
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+.seatsRank label{
+    margin: 5rpx 9rpx;
+}
+/*有座位*/
+.optionSeat image{
+    /*display: inline-block;*/
+    width: 37rpx;
+    height: 30rpx;
+    /*background: url(images/seat_1_03.png) no-repeat;
+    background-size: 37rpx 30rpx;*/
+}
+/*已选座位*/
+.selectedSeat image{
+   /*display: inline-block;*/
+   width: 37rpx;
+   height: 30rpx;
+   /*background: url(images/seat_07.png) no-repeat;
+   background-size: 37rpx 30rpx;*/
+}
+/*已售座位*/
+.soldSeat image{
+    /*display: inline-block;*/
+    width: 37rpx;
+    height: 30rpx;
+    /*background: url(images/selectedSeat_03.png) no-repeat;
+    background-size: 37rpx 30rpx;*/
+}
+/*无座位*/
+.nullSeat{
+    /*display: inline-block;*/
+    width: 37rpx;
+    height: 30rpx;
+}
+/*确认选座*/
+.showSeatsNum{
+    width: 400rpx;
+}
+.submitChoose{
+    display: flex;
+    justify-content: space-between;
+    height: 300rpx;
+    align-items: center;
+    padding: 0 30rpx;
+    margin-top:20rpx;
+}
+.submitChoose button{
+    width: 315rpx;
+    height: 84rpx;
+    background-color: rgb(245,221,117);
+    color: #fff;
+}

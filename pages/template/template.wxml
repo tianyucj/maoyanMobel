@@ -1,0 +1,24 @@
+
+<template name="regTemplate">
+    <view class="body">
+        <view wx:if="{{isRender}}">{{errorMsg}}</view>
+        <view class="title">
+            <text class="{{nowStapeP}}">输入手机号</text>
+            <text class="{{nowStapeP}}">···</text>
+            <text class="{{nowStapeC}}">输入验证码</text>
+            <text class="{{nowStapeC}}">···</text>
+            <text class="{{nowStapePwd}}">输入密码</text>
+        </view>
+        <view class="input">
+            <text>{{labelTxt}}</text><input bindinput="identify" password="{{isPwd}}" placeholder="{{placeholder}}" />
+        </view>
+        <view class="submit">
+            <view class="button">
+                <button bindtap="submitReg">确认</button>
+            </view>
+            <view class="treaty" wx:if="{{ifRender}}">
+                <checkbox value="contact" checked="true" /><text>我已阅读并同意美团网用户协议</text>
+            </view>
+        </view>
+    </view>
+</template>

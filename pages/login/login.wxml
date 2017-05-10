@@ -1,0 +1,48 @@
+<!--pages/login/login.wxml-->
+<view class="body">
+    <view class="msg" wx:if="{{item.isShow}}"><view>{{item.msg}}</view></view>
+    <view class="userPhone">
+        <image src="images/loginIcon_03.png"></image>
+    </view>
+    <view class="title">
+        <text>美团账号登录</text>
+    </view>
+    <view class="logForm">
+        <view class="username">
+            <text>用户名：</text><input bindinput="getUserPhone" type="text" placeholder="邮箱／手机／用户名" />
+        </view>
+        <view class="password">
+            <text>密码：</text><input bindinput="getPwd" type="text" placeholder="密码" password="true" />
+        </view>
+    </view>
+    <view class="button">
+        <button class="subLog" bindtap="subLogin">登录</button>
+    </view>
+    <view class="other">
+        <text bindtap="bindToSign">立即注册</text>
+        <text bindtap="bindToSign">手机号快捷注册 ></text>
+    </view>
+    <view class="otherTitle">
+        <view class="dashed"></view>
+        <text>第三方账号登录</text>
+        <view class="dashed"></view>
+    </view>
+    <view class="linkLogo">
+        <view class="logo">
+            <image src="images/loginIcon_07.png"></image>
+            <text>微信</text>
+        </view>
+        <view class="logo">
+            <image src="images/loginIcon_09.png"></image>
+            <text>QQ</text>
+        </view>
+        <view class="logo">
+            <image src="images/loginIcon_11.png"></image>
+            <text>微博</text>
+        </view>
+        <view class="logo">
+            <image src="images/loginIcon_13.png"></image>
+            <text>百度</text>
+        </view>
+    </view>
+</view>

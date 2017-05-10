@@ -1,0 +1,67 @@
+/* pages/cinema/cinema.wxss */
+.header image{
+    height: 156rpx;
+    width:750rpx;
+}
+.cinemaList{
+    padding: 30rpx 0;
+    margin: 0 30rpx;
+    border-bottom:1rpx solid rgb(212,212,212);
+}
+.name{
+    font-size: 40rpx;
+}
+.cinemaName{
+    display: flex;
+    justify-content: flex-start;
+    margin: 30rpx 0;
+}
+.price{
+    margin-left: 20rpx;
+    color: rgb(153,153,153);
+}
+.price text{
+    color: rgb(243,74,61);
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    color: rgb(105,105,105);
+}
+.distance{
+    color: rgb(153,153,153);
+}
+.label{
+    font-size: 25rpx;
+}
+.label text{
+    display: inline-block;
+    margin: 18rpx 7rpx 18rpx 0;
+}
+.oneLabel{
+    padding: 5rpx;
+    border: 1rpx solid rgb(94, 163, 179);
+    color: rgb(94, 163, 179);
+}
+.blueLabel{
+    padding: 7rpx;
+    background-color:  rgb(137, 199, 238);
+    color: #fff;
+}
+.kingLabel{
+    padding: 7rpx;
+    background-color:  rgb(254,184,79);
+    color: #fff;
+}
+.favorable{
+    padding: 5rpx;
+    background-color: rgb(255,129,111);
+    font-size: 30rpx;
+    color: #fff;
+    margin-right: 14rpx;
+}
+.newsTxt{
+    font-size: 30rpx;
+    color: rgb(151,151,151);
+}

@@ -1,0 +1,11 @@
+<!--pages/mine/mine.wxml-->
+<view class="mineList">
+    <view wx:if="{{isLogin}}" class="mineItem"> 
+        <view>{{userPhone}}</view>
+        <view bindtap="bindRemoveLog" class="right-arrow">安全退出</view>
+    </view>
+    <view class="mineItem" bindtap="bindToMineOrder">
+        <view><text>我的订单</text></view>
+        <view class="right-arrow"><image src="images/1_03.png"></image></view>
+    </view>
+</view>

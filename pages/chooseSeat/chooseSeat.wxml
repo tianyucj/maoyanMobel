@@ -1,0 +1,67 @@
+
+<!--pages/chooseSeat/chooseSeat.wxml-->
+<view class="header">
+  <view class="filmDtail">
+    <text>{{theChain.chainName}}</text>
+    <view class="showTime">
+      <text>今天{{nowDate}}</text>
+      <text class="startTime">{{nowChip.showTime}}</text>
+      <text class="filmStyle">国语3D</text>
+    </view>
+  </view>
+  <!--<view>
+    <view class="turnPlay">换一场</view>
+  </view>-->
+</view>
+<view class="seatStyle">
+  <view class="style">
+    <image src="images/seat_03.png"></image>
+    <text>可选</text>
+  </view>
+  <view class="style">
+    <image src="images/seat_05.png"></image>
+    <text>已售</text>
+  </view>
+  <view class="style">
+    <image src="images/seat_07.png"></image>
+    <text>已选</text>
+  </view>
+  <view class="style cpSeat">
+    <image src="images/seat_09.png"></image>
+    <text>情侣座</text>
+  </view>
+</view>
+<view class="seats">
+  <view class="screen">
+    {{nowChip.voidHall}}荧幕
+  </view>
+  <view class="seats_1">
+    <view>
+        <view wx:for="{{rowNum}}">
+            <view class="seatsRowNum" wx:if="{{item != 0}}">{{item}}</view>
+            <view class="nullSeatNum" wx:if="{{item == 0}}"></view>
+        </view>
+    </view>
+    <scroll-view scroll-x="true" scroll-y="true">
+        <view class="seatsShow" wx:for="{{seats}}" wx:for-index="i">
+            <view class="seatsRank" wx:for="{{item}}" wx:for-item="seat" wx:for-index="j">
+            <label wx:if="{{seat == 1}}" bindtap="change" data-id="seat_{{i}}_{{j}}" class="optionSeat"><image src="images/seat_1_03.png"></image></label>
+            <label wx:if="{{seat == 2}}" bindtap="change" data-id="seat_{{i}}_{{j}}" class="selectedSeat"><image src="images/seat_07.png"></image></label>
+            <label wx:if="{{seat == 3}}" data-id="seat_{{i}}_{{j}}" class="soldSeat"><image src="images/selectedSeat_03.png"></image></label>
+            <label class="nullSeat" wx:if="{{seat == 0}}"></label>
+            </view>
+        </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="submitChoose">
+  <view class="showSeatsNum">
+    <text wx:for="{{trueSeats}}">
+        <text>{{item.row}}排{{item.col}}号;</text>
+    </text>
+  </view>
+  <view>
+    <button wx:if="{{chooseSeat.length == 0}}">请先选座</button>
+    <button wx:if="{{chooseSeat.length > 0}}" bindtap="buyTicks">确认选座</button>
+  </view>
+</view>

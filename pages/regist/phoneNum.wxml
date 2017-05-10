@@ -1,0 +1,3 @@
+<!--pages/regist/phoneNum.wxml-->
+<import src="../template/template" />
+<template is="regTemplate" data="{{...item}}" />
